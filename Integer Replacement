@@ -22,8 +22,8 @@ class Solution:
                 # If even, integer divide n by 2 and add 1 for current operation
                 memo[n] = 1 + check(n//2)
             else:
-                # If odd, choose the lesser of the actions done by either adding 1 
-                # or subtracting 1
+                # If odd, either add 1 or subtract 1; whichever results in the
+                # least total operations 
                 memo[n] = 1 + min(check(n+1), check(n-1))
 
             return memo[n]
