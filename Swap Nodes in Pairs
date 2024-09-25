@@ -10,9 +10,9 @@ class Solution:
     def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
         # Dummy node to point to head of list,
         # useful for managing edge cases
-        dummy = ListNode(0)
-        dummy.next = head
-        prev = dummy            # dummy node placed before head
+        temp = ListNode(0)
+        temp.next = head
+        prev = temp           # temp node placed before head
 
         while prev.next and prev.next.next:
             first = prev.next          
@@ -24,4 +24,4 @@ class Solution:
 
             prev = first               # move prev forward to first for processing next pair, if any
 
-        return dummy.next
+        return temp.next
