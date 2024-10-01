@@ -7,3 +7,14 @@ class Solution:
 
         # Check if string is equal to it's reversed version
         return filteredString == filteredString[::-1]
+
+
+# class Solution:
+#    def isPalindrome(self, s: str) -> bool:
+#        filteredString = ''
+
+#        for char in s:
+#            if char.isalnum():
+#                filteredString += char.lower()
+
+#        return filteredString == filteredString[::-1]
