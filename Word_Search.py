@@ -1,9 +1,16 @@
-# LINK to Question: https://leetcode.com/problems/word-search/description/
-
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         rows = len(board)
         cols = len(board[0])
+
+        # Search Pruning based on char frequency
+        # Count frequency of chars in board and word
+        boardCount = Counter(c for row in board for c in row)
+        wordCount = Counter(word)
+        # If char in word occurs more than in board, return False
+        for char, count in wordCount.items():
+            if boardCount[char] < count:
+                return False
 
         # Using DFS, start from each cell and explore neighbors.
         # If matching char is found, continue to next char in word 
