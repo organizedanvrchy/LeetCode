@@ -1,5 +1,3 @@
-from collections import deque, defaultdict
-
 class Solution:
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         # Build the graph
