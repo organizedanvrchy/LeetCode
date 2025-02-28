@@ -17,3 +17,22 @@ class Solution:
         formatted_output = int(output, base=2)
 
         return formatted_output
+
+# 2nd Solution
+        # # Convert to binary string, remove '0b', and pad with leading zeros
+        # current_bits = bin(n)[2:].zfill(32)
+
+        # # Reverse the bits
+        # reversed_bits = current_bits[::-1]
+
+        # # Convert back to integer
+        # formatted_output = int(reversed_bits, 2)
+
+        # return formatted_output
+
+# 3rd Solution
+        # res = 0
+        # for i in range(32):
+        #     res = (res << 1) | (n & 1)
+        #     n >>= 1
+        # return res
