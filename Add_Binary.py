@@ -35,42 +35,39 @@ class Solution:
         return ''.join(reversed(result))
 
 
-        # 3rd solution
-        # class Solution:
-        #     def addBinary(self, a: str, b: str) -> str:
-        
-        #         result = []
-        #         carry = 0
-        
-        #         # Start from last character in both string
-        #         i = len(a) - 1
-        #         j = len(b) - 1
-        
-        #         while i >= 0 or j >= 0 or carry:
-        #             # Get bit from a or 0 if out of bounds
-        #             if i >= 0:
-        #                 bit_a = int(a[i])
-        #             else:
-        #                 bit_a = 0
-                    
-        #             # Get bit from b or 0 if out of bounds
-        #             if j >= 0:
-        #                 bit_b = int(b[j])
-        #             else:
-        #                 bit_b = 0
-                    
-        #             # Calculate the binary sum
-        #             binary_sum = bit_a + bit_b + carry
-        #             # Append last bit of the binary sum
-        #             result.append(str(binary_sum % 2))
-        #             # Update the carry
-        #             carry = binary_sum // 2
-        
-        #             # Move to left bit in string (if any)
-        #             i -= 1
-        #             j -= 1
-        
-        #         # Reverse and join list for resultant binary sum
-        #         output = ''.join(result[::-1])
-        #         return output
+        # 3rd solution        
+#         result = []
+#         carry = 0
+
+#         # Start from last character in both string
+#         i = len(a) - 1
+#         j = len(b) - 1
+
+#         while i >= 0 or j >= 0 or carry:
+#             # Get bit from a or 0 if out of bounds
+#             if i >= 0:
+#                 bit_a = int(a[i])
+#             else:
+#                 bit_a = 0
+
+#             # Get bit from b or 0 if out of bounds
+#             if j >= 0:
+#                 bit_b = int(b[j])
+#             else:
+#                 bit_b = 0
+
+#             # Calculate the binary sum
+#             binary_sum = bit_a + bit_b + carry
+#             # Append last bit of the binary sum
+#             result.append(str(binary_sum % 2))
+#             # Update the carry
+#             carry = binary_sum // 2
+
+#             # Move to left bit in string (if any)
+#             i -= 1
+#             j -= 1
+
+#         # Reverse and join list for resultant binary sum
+#         output = ''.join(result[::-1])
+#         return output
         
