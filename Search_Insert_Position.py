@@ -1,4 +1,4 @@
-# Initial Solution
+# Initial Solution [O(nlogn) Time Complexity - Works but incorrect]
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
         for num in range(len(nums)):
@@ -12,7 +12,7 @@ class Solution:
                 i = nums.index(target)
                 return i
 
-# Expected Solution
+# Expected Solution [O(logn) Time Complexity]
 # Binary Search
 left, right = 0, len(nums) - 1
 
