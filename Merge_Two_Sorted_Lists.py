@@ -32,23 +32,23 @@ class Solution:
         return temp.next
 
 # Alternative Approach (Pointers Only - O(n+m) space efficiency and O(1) memory efficiency)
-        # # Dummy node to simplify edge cases
-        # dummy = ListNode()
+        # # Temp node to simplify edge cases
+        # temp = ListNode()
         # # Pointer to build the new list
-        # current = dummy     
+        # curr = temp     
         
         # while list1 and list2:
         #     if list1.val < list2.val:
-        #         current.next = list1
+        #         curr.next = list1
         #         list1 = list1.next
         #     else:
-        #         current.next = list2
+        #         curr.next = list2
         #         list2 = list2.next
         #     # Move to the newly added node
-        #     current = current.next  
+        #     curr = curr.next  
         
-        #     # Append the remaining part of the non-empty list
-        #     current.next = list1 if list1 else list2
+        # # Append the remaining part of the non-empty list
+        # curr.next = list1 if list1 else list2
 
-        #     # Return the merged list starting from the first real node
-        #     return dummy.next  
+        # # Return the merged list starting from the first real node
+        # return temp.next  
