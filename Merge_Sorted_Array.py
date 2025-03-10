@@ -21,4 +21,19 @@ class Solution:
         # If nums2 is not exhausted, place additional elements in nums1
         nums1[:point2 + 1] = nums2[:point2 + 1]
 
+# Alternative
+# class Solution:
+#     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+#         """
+#         Do not return anything, modify nums1 in-place instead.
+#         """
+#         # For each element in nums2, remove that many zeros in nums1
+#         # and then append the elements of nums2 to nums1
+#         for num in nums2:
+#             nums1.remove(0)
+#             nums1.append(num)
+
+#         # Sort merged array
+#         nums1.sort()
+
 
